@@ -1,0 +1,39 @@
+{
+    // Użyj funkcji IntelliSense, aby uzyskać informacje o możliwych atrybutach.
+    // Najedź kursorem, aby wyświetlić opisy istniejących atrybutów.
+    // Aby uzyskać więcej informacji, odwiedź stronę: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run server",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "src.main:app",
+                "--reload"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "DB_URL": "sqlite:////Users/gonczor/Projects/priv/sqlAlchemyExporiment/main.sqlite3"
+            }
+        },
+        {
+            "name": "run tests",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "tests"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "DB_URL": "sqlite:////Users/gonczor/Projects/priv/sqlAlchemyExporiment/test.sqlite3"
+            }
+        }
+    ]
+}

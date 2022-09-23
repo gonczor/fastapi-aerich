@@ -1,0 +1,9 @@
+fastapi
+tortoise-orm
+aerich
+black
+mypy
+uvicorn
+requests
+pytest
+pytest-asyncio
