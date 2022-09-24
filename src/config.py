@@ -7,7 +7,6 @@ class Config(BaseSettings):
     db_url: str = "sqlite:///"
 
 
-
 @lru_cache
 def get_config():
     return Config()
